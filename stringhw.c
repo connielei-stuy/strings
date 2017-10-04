@@ -46,6 +46,13 @@ int main(){
   printf("[mine] length of \"%s\": %d\n", r, mystrlen(r));
   printf("[standard] length of \"%s\": %lu\n\n", r, strlen(r));
 
+  char str1[] = "hello";
+  char str2[40];
+  notstrcpy(str2, str1);
+  printf("testing strcpy:\n");
+  printf("source: %s\n",str1);
+  printf("copied dest: %s\n", str2);
+
   printf("testing strncat\n");
   char mysrc[50], mydest[50];
   strcpy(mysrc,  "This is source");
@@ -59,6 +66,20 @@ int main(){
   strncat(dest, src, 15);
   printf("[Standard] Final destination string : |%s|\n\n", dest);
 
+  char bob[] = "hair";
+  char steve[] = "HAiR";
+  printf("testing strcmp:\n");
+  printf("strcmp |%s| & |%s|: ", bob, steve);
+  notstrcmp(bob, steve);
+  char alex[] = "string cheese";
+  char harry[] = "cheese";
+  printf("strcmp |%s| & |%s|: ", alex, harry);
+  notstrcmp(alex, harry);
+  char gilbert[] = "ostrich";
+  char gunther[] = "an emu is an emo ostrich";
+  printf("strcmp |%s| & |%s|: ", gilbert, gunther);
+  notstrcmp(gilbert, gunther);
+  
   char str[] = "http://www.tutorialspoint.com";
   char ch = '.';
 
