@@ -51,7 +51,7 @@ int main(){
   notstrcpy(str2, str1);
   printf("testing strcpy:\n");
   printf("source: %s\n",str1);
-  printf("copied dest: %s\n", str2);
+  printf("copied dest: %s\n\n", str2);
 
   printf("testing strncat\n");
   char mysrc[50], mydest[50];
@@ -83,7 +83,7 @@ int main(){
   char str[] = "http://www.tutorialspoint.com";
   char ch = '.';
 
-  printf("testing strchr\n");
+  printf("\ntesting strchr\n");
   printf("[mine] String after |%c| is - |%s|\n", ch, mystrchr(str, ch));
   printf("[standard] String after |%c| is - |%s|\n", ch, strchr(str, ch));
 
